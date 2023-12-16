@@ -1,0 +1,60 @@
+<!--
+File: index.html
+GUI Assignment: Implementing one line scrabble
+Aaron Pratt, Created on December 10, 2023
+Email: aaron_pratt@student.uml.edu
+Description: Contains HTML code that provides user UI
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <title>Scrabble</title>
+</head>
+<body>
+    <header>
+        <h1>Scrabble</h1> 
+    </header>
+    <!-- Shows total score-->
+    <div id="total_score">Total Score: 0</div>
+    <!-- Shows remaining tiles left from the tile pool -->
+    <div id="remaining_tiles">Remaining Tiles: 0</div>
+    <!-- Layout for the game board -->
+    <div id="board" class="game-element">
+        <img src="images/game_board/empty.png" alt="Slot 1" class="board-slot slot-1">
+        <img src="images/game_board/empty.png" alt="Slot 2" class="board-slot slot-2">
+        <img src="images/game_board/2xWordScore.png" alt="Slot 3" class="board-slot slot-3">
+        <img src="images/game_board/empty.png" alt="Slot 4" class="board-slot slot-4">
+        <img src="images/game_board/empty.png" alt="Slot 5" class="board-slot slot-5">
+        <img src="images/game_board/empty.png" alt="Slot 6" class="board-slot slot-6">
+        <img src="images/game_board/2xLetterScore.png" alt="Slot 7" class="board-slot slot-7">
+        <img src="images/game_board/empty.png" alt="Slot 8" class="board-slot slot-8">
+        <img src="images/game_board/2xLetterScore.png" alt="Slot 9" class="board-slot slot-9">
+        <img src="images/game_board/empty.png" alt="Slot 10" class="board-slot slot-10">
+        <img src="images/game_board/empty.png" alt="Slot 11" class="board-slot slot-11">
+        <img src="images/game_board/empty.png" alt="Slot 12" class="board-slot slot-12">
+        <img src="images/game_board/2xWordScore.png" alt="Slot 13" class="board-slot slot-13">
+        <img src="images/game_board/empty.png" alt="Slot 14" class="board-slot slot-14">
+        <img src="images/game_board/empty.png" alt="Slot 15" class="board-slot slot-15">
+    </div>
+    <!-- Holds space for tiles -->
+    <div id="tile_holder" class="game-element">
+    </div>
+    <!-- Buttons to calculate the score and restart game -->
+    <div id="buttonContainer">
+        <div id="calculateScoreButtonContainer">
+            <button id="calculateScoreButton">Calculate Score</button>
+        </div>
+        <div id="restartButtonContainer">
+            <button id="restartButton">Restart Game</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/scrabble.js"></script>
+</body>
+</html>

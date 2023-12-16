@@ -1,0 +1,127 @@
+/*
+File: styles.css
+GUI Assignment: Implementing one line scrabble
+Aaron Pratt, Created on December 10, 2023
+Email: aaron_pratt@student.uml.edu
+Description: Contains all styling for scrabble
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 180px; 
+}
+
+h1 {
+    margin: 0;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    margin: 20px 0; 
+}
+
+#board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.board-slot {
+    margin: 0 2px; 
+    width: 80px; 
+    height: 80px; 
+}
+
+#tile_holder {
+    text-align: center;
+    position: relative; 
+}
+
+#draggableTile {
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.draggable-tile {
+    width: 65px; 
+    height: 65px;
+}
+
+#buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#calculateScoreButtonContainer,
+#restartButtonContainer {
+    margin-top: 50px;
+    margin-bottom: 1px;
+}
+
+#calculateScoreButton,
+#restartButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+    display: inline-block;
+}
+
+#calculateScoreButton {
+    background-color: #4CAF50;
+    color: white;
+    margin-right: 20px;
+}
+
+#calculateScoreButton:hover {
+    background-color: #45a049;
+}
+
+#restartButton {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+#restartButton:hover {
+    background-color: #45a049;
+}
+
+#total_score {
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+#remaining_tiles {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
